@@ -11,9 +11,7 @@ import UIKit
 
 class CreateTimerBuilder {
     static func build() -> CreateTimerViewController {
-        let storyboard = UIStoryboard(name: "CreateTimer", bundle: nil)
-        let optionalViewController = storyboard.instantiateInitialViewController() as? CreateTimerViewController
-        guard let viewController = optionalViewController else {
+        guard let viewController = R.storyboard.createTimer.instantiateInitialViewController() else {
             fatalError("CreateTimerView Couldn't be inited")
         }
 

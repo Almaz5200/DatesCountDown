@@ -11,8 +11,7 @@ import UIKit
 
 class MainBuilder {
     static func build() -> MainViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let viewController = storyboard.instantiateInitialViewController() as? MainViewController else {
+        guard let viewController = R.storyboard.main.instantiateInitialViewController() else {
             fatalError("Couldn't init Main")
         }
 

@@ -14,6 +14,7 @@
 		2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BDFC4AEAFD30850AA2E39 /* CreateTimerBuilder.swift */; };
 		362B5D7C19C61EDEAEA27154 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91930040FEFD15B00790750A /* MainBuilder.swift */; };
 		394E6D602263836C00C375A9 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E6D5F2263836C00C375A9 /* MainCell.swift */; };
+		395D40FC2263A3AB0066245E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D40FB2263A3AB0066245E /* R.generated.swift */; };
 		39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6539224221650077EDF1 /* AppDelegate.swift */; };
 		39FE653F224221650077EDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE653D224221650077EDF1 /* Main.storyboard */; };
 		39FE6541224221680077EDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6540224221680077EDF1 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		168F7997FF1A24BA9321BD9C /* EditTimerInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerInteractor.swift; sourceTree = "<group>"; };
 		2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerViewController.swift; sourceTree = "<group>"; };
 		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		395D40FB2263A3AB0066245E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		39FE6536224221650077EDF1 /* DatesCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatesCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FE6539224221650077EDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FE653E224221650077EDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,12 +149,21 @@
 		395D40F62263A0A70066245E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				395D40FA2263A3620066245E /* Generated */,
 				39FE6539224221650077EDF1 /* AppDelegate.swift */,
 				39FE6540224221680077EDF1 /* Assets.xcassets */,
 				39FE6542224221680077EDF1 /* LaunchScreen.storyboard */,
 				39FE6545224221680077EDF1 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		395D40FA2263A3620066245E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				395D40FB2263A3AB0066245E /* R.generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		39FE652D224221650077EDF1 = {
@@ -384,6 +395,7 @@
 			buildConfigurationList = 39FE6548224221680077EDF1 /* Build configuration list for PBXNativeTarget "DatesCountDown" */;
 			buildPhases = (
 				3162A8BFF9834EA0035C0AA2 /* [CP] Check Pods Manifest.lock */,
+				395D40F72263A2B80066245E /* R.Swift */,
 				39FE6532224221650077EDF1 /* Sources */,
 				39FE6533224221650077EDF1 /* Frameworks */,
 				39FE6534224221650077EDF1 /* Resources */,
@@ -502,6 +514,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		395D40F72263A2B80066245E /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		39FE655B224B5C120077EDF1 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,6 +570,7 @@
 				362B5D7C19C61EDEAEA27154 /* MainBuilder.swift in Sources */,
 				56317E547FD37356C2D8C4D9 /* CreateTimerContract.swift in Sources */,
 				D435D1D7E4AAC5B0D33A1278 /* CreateTimerViewController.swift in Sources */,
+				395D40FC2263A3AB0066245E /* R.generated.swift in Sources */,
 				FC67E189CF25A44EB1C2B96B /* CreateTimerPresenter.swift in Sources */,
 				E580E73E7C91EEF6098C7A09 /* CreateTimerInteractor.swift in Sources */,
 				39FE65522247AA2E0077EDF1 /* CountDownCell.swift in Sources */,

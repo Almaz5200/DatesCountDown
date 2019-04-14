@@ -645,5 +645,5 @@ custom_rules:
 excluded:
   - Carthage
   - Pods
-  - Etalon2.0/Resources/Storyboards
-  - Etalon2.0/Resources/Generated
+  - R.generated.swift
+  - DatesCountDown/Resources/Generated

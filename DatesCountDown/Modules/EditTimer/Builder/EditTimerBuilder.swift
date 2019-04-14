@@ -11,8 +11,7 @@ import UIKit
 
 class EditTimerBuilder {
     static func build() -> EditTimerViewController {
-        let storyboard = UIStoryboard(name: "EditTimer", bundle: nil)
-        guard let viewController = storyboard.instantiateInitialViewController() as? EditTimerViewController else {
+        guard let viewController = R.storyboard.editTimer.instantiateInitialViewController() else {
             fatalError("Couldn't init EditTimer")
         }
 
