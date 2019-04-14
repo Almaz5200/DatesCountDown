@@ -5,5 +5,7 @@ target 'DatesCountDown' do
 	pod 'RxSwift'
 	pod 'RxCocoa'
 
+	pod 'R.swift'
+
 	pod 'RealmSwift'
 end
