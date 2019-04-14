@@ -21,8 +21,6 @@
 		39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6542224221680077EDF1 /* LaunchScreen.storyboard */; };
 		39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */; };
 		39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654D2247A8580077EDF1 /* EditTimer.storyboard */; };
-		39FE65522247AA2E0077EDF1 /* CountDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65502247AA2E0077EDF1 /* CountDownCell.swift */; };
-		39FE65532247AA2E0077EDF1 /* CountDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FE65512247AA2E0077EDF1 /* CountDownCell.xib */; };
 		39FE65562247ABAF0077EDF1 /* CountDownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */; };
 		39FE65592247ACC10077EDF1 /* RealmCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65582247ACC10077EDF1 /* RealmCountDown.swift */; };
 		53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */; };
@@ -58,8 +56,6 @@
 		39FE6545224221680077EDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTimer.storyboard; sourceTree = "<group>"; };
 		39FE654D2247A8580077EDF1 /* EditTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditTimer.storyboard; sourceTree = "<group>"; };
-		39FE65502247AA2E0077EDF1 /* CountDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCell.swift; sourceTree = "<group>"; };
-		39FE65512247AA2E0077EDF1 /* CountDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountDownCell.xib; sourceTree = "<group>"; };
 		39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownProtocol.swift; sourceTree = "<group>"; };
 		39FE65582247ACC10077EDF1 /* RealmCountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCountDown.swift; sourceTree = "<group>"; };
 		3FBF044904D8EB0034A43F76 /* EditTimerRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerRouter.swift; sourceTree = "<group>"; };
@@ -194,15 +190,6 @@
 			path = DatesCountDown;
 			sourceTree = "<group>";
 		};
-		39FE654F2247A9F80077EDF1 /* CountDownCell */ = {
-			isa = PBXGroup;
-			children = (
-				39FE65502247AA2E0077EDF1 /* CountDownCell.swift */,
-				39FE65512247AA2E0077EDF1 /* CountDownCell.xib */,
-			);
-			path = CountDownCell;
-			sourceTree = "<group>";
-		};
 		39FE65542247AB140077EDF1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +218,6 @@
 		55A7803C345BA6A9BD5CC58C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				39FE654F2247A9F80077EDF1 /* CountDownCell */,
 				7EB53A577DE365DAC0BFC32F /* Main */,
 				991AD27FE147FE6CA7A09DB3 /* CreateTimer */,
 				9889E26EE7CC4BA2E21715FC /* EditTimer */,
@@ -453,7 +439,6 @@
 				39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */,
 				39FE6541224221680077EDF1 /* Assets.xcassets in Resources */,
 				39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */,
-				39FE65532247AA2E0077EDF1 /* CountDownCell.xib in Resources */,
 				39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */,
 				39FE653F224221650077EDF1 /* Main.storyboard in Resources */,
 			);
@@ -573,7 +558,6 @@
 				395D40FC2263A3AB0066245E /* R.generated.swift in Sources */,
 				FC67E189CF25A44EB1C2B96B /* CreateTimerPresenter.swift in Sources */,
 				E580E73E7C91EEF6098C7A09 /* CreateTimerInteractor.swift in Sources */,
-				39FE65522247AA2E0077EDF1 /* CountDownCell.swift in Sources */,
 				B1C9EDF58D440260C29CB741 /* CreateTimerRouter.swift in Sources */,
 				2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */,
 				8564D86CB80811BF4E69BDB2 /* EditTimerContract.swift in Sources */,
