@@ -12,7 +12,7 @@ import UIKit
 class EditTimerBuilder {
     static func build() -> EditTimerViewController {
         guard let viewController = R.storyboard.editTimer.instantiateInitialViewController() else {
-            fatalError("Couldn't init EditTimer")
+            fatalError("Couldn't init \(String(describing: self))")
         }
 
 		let router = EditTimerRouter()

@@ -12,7 +12,7 @@ import UIKit
 class CreateTimerBuilder {
     static func build() -> CreateTimerViewController {
         guard let viewController = R.storyboard.createTimer.instantiateInitialViewController() else {
-            fatalError("CreateTimerView Couldn't be inited")
+            fatalError("\(String(describing: self)) Couldn't be inited")
         }
 
 		let router = CreateTimerRouter()
