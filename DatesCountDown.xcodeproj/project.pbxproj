@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0362168DFD30B4DD179A7D72 /* EditTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06CCA6D0EDECC885123CAB /* EditTimerPresenter.swift */; };
+		093E53F3B062961C635DC2C1 /* EditTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168F7997FF1A24BA9321BD9C /* EditTimerInteractor.swift */; };
+		11CAE0DF554142916684FA3A /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF64288BA99506F87168214 /* MainInteractor.swift */; };
+		15C499F2FE6BC43701B2B6E6 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718E096D54CE56E93E3ED58 /* MainRouter.swift */; };
+		2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BDFC4AEAFD30850AA2E39 /* CreateTimerBuilder.swift */; };
+		362B5D7C19C61EDEAEA27154 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91930040FEFD15B00790750A /* MainBuilder.swift */; };
+		394E6D602263836C00C375A9 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E6D5F2263836C00C375A9 /* MainCell.swift */; };
+		39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6539224221650077EDF1 /* AppDelegate.swift */; };
+		39FE653F224221650077EDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE653D224221650077EDF1 /* Main.storyboard */; };
+		39FE6541224221680077EDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6540224221680077EDF1 /* Assets.xcassets */; };
+		39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6542224221680077EDF1 /* LaunchScreen.storyboard */; };
+		39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */; };
+		39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654D2247A8580077EDF1 /* EditTimer.storyboard */; };
+		39FE65522247AA2E0077EDF1 /* CountDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65502247AA2E0077EDF1 /* CountDownCell.swift */; };
+		39FE65532247AA2E0077EDF1 /* CountDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39FE65512247AA2E0077EDF1 /* CountDownCell.xib */; };
+		39FE65562247ABAF0077EDF1 /* CountDownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */; };
+		39FE65592247ACC10077EDF1 /* RealmCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65582247ACC10077EDF1 /* RealmCountDown.swift */; };
+		53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */; };
+		53CB68FAA939F5E51C0A39EF /* EditTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */; };
+		56317E547FD37356C2D8C4D9 /* CreateTimerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44DE92959E54E7A74031B7 /* CreateTimerContract.swift */; };
+		6958500C95585162CD505B20 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FBF22C82A9C999705BDFDE /* MainPresenter.swift */; };
+		8564D86CB80811BF4E69BDB2 /* EditTimerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D35E59FA28A58884B44011D /* EditTimerContract.swift */; };
+		B1C9EDF58D440260C29CB741 /* CreateTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1133B467FBFC369EA8FF7F96 /* CreateTimerRouter.swift */; };
+		B413927EB3ECF578B115A2C7 /* Pods_DatesCountDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688A43E92AB9517104D41E0E /* Pods_DatesCountDown.framework */; };
+		BB9DBB81649F82758C347253 /* MainContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B67761F7CB3B75A1CE8647 /* MainContract.swift */; };
+		D435D1D7E4AAC5B0D33A1278 /* CreateTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0F6ADEE65E3E601FC44BA /* CreateTimerViewController.swift */; };
+		DAFBA80C4B245ABD4910A5D4 /* EditTimerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF044904D8EB0034A43F76 /* EditTimerRouter.swift */; };
+		E580E73E7C91EEF6098C7A09 /* CreateTimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB581C996999449D06B586E /* CreateTimerInteractor.swift */; };
+		F308CB5C81F2F2BA26BE8B72 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BF424DD31E358558376E7 /* MainViewController.swift */; };
+		FC67E189CF25A44EB1C2B96B /* CreateTimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EC930B2E3D1A868634AF32 /* CreateTimerPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		003E18B543EEC29D29A97CE7 /* Pods-DatesCountDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatesCountDown.debug.xcconfig"; path = "Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown.debug.xcconfig"; sourceTree = "<group>"; };
+		02040EF2FB5BFF325C7EBCD6 /* Pods-DatesCountDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatesCountDown.release.xcconfig"; path = "Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown.release.xcconfig"; sourceTree = "<group>"; };
+		0718E096D54CE56E93E3ED58 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		0DF64288BA99506F87168214 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		1133B467FBFC369EA8FF7F96 /* CreateTimerRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerRouter.swift; sourceTree = "<group>"; };
+		14EC930B2E3D1A868634AF32 /* CreateTimerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerPresenter.swift; sourceTree = "<group>"; };
+		168F7997FF1A24BA9321BD9C /* EditTimerInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerInteractor.swift; sourceTree = "<group>"; };
+		2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerViewController.swift; sourceTree = "<group>"; };
+		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		39FE6536224221650077EDF1 /* DatesCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatesCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FE6539224221650077EDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39FE653E224221650077EDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39FE6540224221680077EDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39FE6543224221680077EDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39FE6545224221680077EDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTimer.storyboard; sourceTree = "<group>"; };
+		39FE654D2247A8580077EDF1 /* EditTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditTimer.storyboard; sourceTree = "<group>"; };
+		39FE65502247AA2E0077EDF1 /* CountDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownCell.swift; sourceTree = "<group>"; };
+		39FE65512247AA2E0077EDF1 /* CountDownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountDownCell.xib; sourceTree = "<group>"; };
+		39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownProtocol.swift; sourceTree = "<group>"; };
+		39FE65582247ACC10077EDF1 /* RealmCountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCountDown.swift; sourceTree = "<group>"; };
+		3FBF044904D8EB0034A43F76 /* EditTimerRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerRouter.swift; sourceTree = "<group>"; };
+		496BDFC4AEAFD30850AA2E39 /* CreateTimerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerBuilder.swift; sourceTree = "<group>"; };
+		4CD0F6ADEE65E3E601FC44BA /* CreateTimerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerViewController.swift; sourceTree = "<group>"; };
+		688A43E92AB9517104D41E0E /* Pods_DatesCountDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatesCountDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D35E59FA28A58884B44011D /* EditTimerContract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerContract.swift; sourceTree = "<group>"; };
+		91930040FEFD15B00790750A /* MainBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		99FBF22C82A9C999705BDFDE /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		9D8BF424DD31E358558376E7 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AC06CCA6D0EDECC885123CAB /* EditTimerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerPresenter.swift; sourceTree = "<group>"; };
+		CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerBuilder.swift; sourceTree = "<group>"; };
+		DAB581C996999449D06B586E /* CreateTimerInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerInteractor.swift; sourceTree = "<group>"; };
+		EF44DE92959E54E7A74031B7 /* CreateTimerContract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerContract.swift; sourceTree = "<group>"; };
+		F9B67761F7CB3B75A1CE8647 /* MainContract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainContract.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39FE6533224221650077EDF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B413927EB3ECF578B115A2C7 /* Pods_DatesCountDown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05E2A8D38BE456E3B21BB018 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC06CCA6D0EDECC885123CAB /* EditTimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0BDAC73ADE18874B3FEC323B /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				F9B67761F7CB3B75A1CE8647 /* MainContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		15211DD15641A6DEC0FB9445 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18EB5F09E69695B3031BCF95 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				168F7997FF1A24BA9321BD9C /* EditTimerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1DB248A50C636DC1EDAEBCA8 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				EF44DE92959E54E7A74031B7 /* CreateTimerContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		29F715EA678C84B24CD2482F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3FBF044904D8EB0034A43F76 /* EditTimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		340CFA2EDCBA4D9F2D8E0532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688A43E92AB9517104D41E0E /* Pods_DatesCountDown.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		394E6D5E2263833700C375A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				394E6D5F2263836C00C375A9 /* MainCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		39FE652D224221650077EDF1 = {
+			isa = PBXGroup;
+			children = (
+				39FE6538224221650077EDF1 /* DatesCountDown */,
+				39FE6537224221650077EDF1 /* Products */,
+				B83C999332A6E5A3621152D4 /* Pods */,
+				340CFA2EDCBA4D9F2D8E0532 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39FE6537224221650077EDF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39FE6536224221650077EDF1 /* DatesCountDown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39FE6538224221650077EDF1 /* DatesCountDown */ = {
+			isa = PBXGroup;
+			children = (
+				39FE6539224221650077EDF1 /* AppDelegate.swift */,
+				39FE6540224221680077EDF1 /* Assets.xcassets */,
+				39FE6542224221680077EDF1 /* LaunchScreen.storyboard */,
+				39FE6545224221680077EDF1 /* Info.plist */,
+				55A7803C345BA6A9BD5CC58C /* Modules */,
+				39FE65542247AB140077EDF1 /* Models */,
+			);
+			path = DatesCountDown;
+			sourceTree = "<group>";
+		};
+		39FE654F2247A9F80077EDF1 /* CountDownCell */ = {
+			isa = PBXGroup;
+			children = (
+				39FE65502247AA2E0077EDF1 /* CountDownCell.swift */,
+				39FE65512247AA2E0077EDF1 /* CountDownCell.xib */,
+			);
+			path = CountDownCell;
+			sourceTree = "<group>";
+		};
+		39FE65542247AB140077EDF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39FE65572247ACB50077EDF1 /* Realm */,
+				39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		39FE65572247ACB50077EDF1 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				39FE65582247ACC10077EDF1 /* RealmCountDown.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3F2A396594BAAF14BED08524 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1133B467FBFC369EA8FF7F96 /* CreateTimerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		55A7803C345BA6A9BD5CC58C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				39FE654F2247A9F80077EDF1 /* CountDownCell */,
+				7EB53A577DE365DAC0BFC32F /* Main */,
+				991AD27FE147FE6CA7A09DB3 /* CreateTimer */,
+				9889E26EE7CC4BA2E21715FC /* EditTimer */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		59527EC17F55AF77A6649934 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DAB581C996999449D06B586E /* CreateTimerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6D0057427110B711ECB748DB /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				496BDFC4AEAFD30850AA2E39 /* CreateTimerBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		791FE8CABEB0F84B04A075BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0F6ADEE65E3E601FC44BA /* CreateTimerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EB53A577DE365DAC0BFC32F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				394E6D5E2263833700C375A9 /* Cell */,
+				0BDAC73ADE18874B3FEC323B /* Contract */,
+				CA80567A8AB64379A6B11E83 /* View */,
+				F56E32C96B86E72B87D338B2 /* Presenter */,
+				BBDC7642FD8F37F7467AA301 /* Interactor */,
+				F4D9EB21EC94E7E814080BA3 /* Router */,
+				8915BCE98B4614592ADA2D5A /* Builder */,
+				39FE653D224221650077EDF1 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8558C2E82D9C1D893916A1EB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				14EC930B2E3D1A868634AF32 /* CreateTimerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8915BCE98B4614592ADA2D5A /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				91930040FEFD15B00790750A /* MainBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		9889E26EE7CC4BA2E21715FC /* EditTimer */ = {
+			isa = PBXGroup;
+			children = (
+				D820D5FC7F3BF3056CE60E56 /* Contract */,
+				15211DD15641A6DEC0FB9445 /* View */,
+				05E2A8D38BE456E3B21BB018 /* Presenter */,
+				18EB5F09E69695B3031BCF95 /* Interactor */,
+				29F715EA678C84B24CD2482F /* Router */,
+				FADC313C16E05AD3F239B604 /* Builder */,
+				39FE654D2247A8580077EDF1 /* EditTimer.storyboard */,
+			);
+			path = EditTimer;
+			sourceTree = "<group>";
+		};
+		991AD27FE147FE6CA7A09DB3 /* CreateTimer */ = {
+			isa = PBXGroup;
+			children = (
+				1DB248A50C636DC1EDAEBCA8 /* Contract */,
+				791FE8CABEB0F84B04A075BF /* View */,
+				8558C2E82D9C1D893916A1EB /* Presenter */,
+				59527EC17F55AF77A6649934 /* Interactor */,
+				3F2A396594BAAF14BED08524 /* Router */,
+				6D0057427110B711ECB748DB /* Builder */,
+				39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */,
+			);
+			path = CreateTimer;
+			sourceTree = "<group>";
+		};
+		B83C999332A6E5A3621152D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				003E18B543EEC29D29A97CE7 /* Pods-DatesCountDown.debug.xcconfig */,
+				02040EF2FB5BFF325C7EBCD6 /* Pods-DatesCountDown.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBDC7642FD8F37F7467AA301 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0DF64288BA99506F87168214 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA80567A8AB64379A6B11E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BF424DD31E358558376E7 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D820D5FC7F3BF3056CE60E56 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				7D35E59FA28A58884B44011D /* EditTimerContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		F4D9EB21EC94E7E814080BA3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0718E096D54CE56E93E3ED58 /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F56E32C96B86E72B87D338B2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				99FBF22C82A9C999705BDFDE /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FADC313C16E05AD3F239B604 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39FE6535224221650077EDF1 /* DatesCountDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39FE6548224221680077EDF1 /* Build configuration list for PBXNativeTarget "DatesCountDown" */;
+			buildPhases = (
+				09353AF8C99243E857CA639C /* [CP] Check Pods Manifest.lock */,
+				39FE6532224221650077EDF1 /* Sources */,
+				39FE6533224221650077EDF1 /* Frameworks */,
+				39FE6534224221650077EDF1 /* Resources */,
+				39FE655B224B5C120077EDF1 /* SwiftLint */,
+				1801834AE358B1350FE6B878 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatesCountDown;
+			productName = DatesCountDown;
+			productReference = 39FE6536224221650077EDF1 /* DatesCountDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39FE652E224221650077EDF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Artem Trubacheev";
+				TargetAttributes = {
+					39FE6535224221650077EDF1 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 39FE6531224221650077EDF1 /* Build configuration list for PBXProject "DatesCountDown" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39FE652D224221650077EDF1;
+			productRefGroup = 39FE6537224221650077EDF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39FE6535224221650077EDF1 /* DatesCountDown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39FE6534224221650077EDF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */,
+				39FE6541224221680077EDF1 /* Assets.xcassets in Resources */,
+				39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */,
+				39FE65532247AA2E0077EDF1 /* CountDownCell.xib in Resources */,
+				39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */,
+				39FE653F224221650077EDF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09353AF8C99243E857CA639C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatesCountDown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1801834AE358B1350FE6B878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39FE655B224B5C120077EDF1 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39FE6532224221650077EDF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */,
+				BB9DBB81649F82758C347253 /* MainContract.swift in Sources */,
+				F308CB5C81F2F2BA26BE8B72 /* MainViewController.swift in Sources */,
+				394E6D602263836C00C375A9 /* MainCell.swift in Sources */,
+				39FE65592247ACC10077EDF1 /* RealmCountDown.swift in Sources */,
+				6958500C95585162CD505B20 /* MainPresenter.swift in Sources */,
+				11CAE0DF554142916684FA3A /* MainInteractor.swift in Sources */,
+				15C499F2FE6BC43701B2B6E6 /* MainRouter.swift in Sources */,
+				362B5D7C19C61EDEAEA27154 /* MainBuilder.swift in Sources */,
+				56317E547FD37356C2D8C4D9 /* CreateTimerContract.swift in Sources */,
+				D435D1D7E4AAC5B0D33A1278 /* CreateTimerViewController.swift in Sources */,
+				FC67E189CF25A44EB1C2B96B /* CreateTimerPresenter.swift in Sources */,
+				E580E73E7C91EEF6098C7A09 /* CreateTimerInteractor.swift in Sources */,
+				39FE65522247AA2E0077EDF1 /* CountDownCell.swift in Sources */,
+				B1C9EDF58D440260C29CB741 /* CreateTimerRouter.swift in Sources */,
+				2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */,
+				8564D86CB80811BF4E69BDB2 /* EditTimerContract.swift in Sources */,
+				53CB68FAA939F5E51C0A39EF /* EditTimerViewController.swift in Sources */,
+				39FE65562247ABAF0077EDF1 /* CountDownProtocol.swift in Sources */,
+				0362168DFD30B4DD179A7D72 /* EditTimerPresenter.swift in Sources */,
+				093E53F3B062961C635DC2C1 /* EditTimerInteractor.swift in Sources */,
+				DAFBA80C4B245ABD4910A5D4 /* EditTimerRouter.swift in Sources */,
+				53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39FE653D224221650077EDF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39FE653E224221650077EDF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39FE6542224221680077EDF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39FE6543224221680077EDF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39FE6546224221680077EDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39FE6547224221680077EDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39FE6549224221680077EDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003E18B543EEC29D29A97CE7 /* Pods-DatesCountDown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZB2Q96A5B;
+				INFOPLIST_FILE = DatesCountDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atrubacheev.DatesCountDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39FE654A224221680077EDF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02040EF2FB5BFF325C7EBCD6 /* Pods-DatesCountDown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZB2Q96A5B;
+				INFOPLIST_FILE = DatesCountDown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = atrubacheev.DatesCountDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39FE6531224221650077EDF1 /* Build configuration list for PBXProject "DatesCountDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FE6546224221680077EDF1 /* Debug */,
+				39FE6547224221680077EDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39FE6548224221680077EDF1 /* Build configuration list for PBXNativeTarget "DatesCountDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FE6549224221680077EDF1 /* Debug */,
+				39FE654A224221680077EDF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39FE652E224221650077EDF1 /* Project object */;
+}
