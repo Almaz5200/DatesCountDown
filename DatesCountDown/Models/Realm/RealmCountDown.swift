@@ -9,10 +9,10 @@
 import RealmSwift
 
 class RealmCountDown: Object, CountDown {
-    var dateEnd: Date = Date()
-    var countdownTitle: String = ""
+    @objc dynamic var dateEnd: Date = Date()
+    @objc dynamic var countdownTitle: String = ""
     // swiftlint:disable identifier_name
-    var id: Int = 0
+    @objc dynamic var id: Int = 0
     // swiftlint:enable identifier_name
 
     override static func primaryKey() -> String? {

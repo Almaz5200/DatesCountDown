@@ -14,6 +14,13 @@ class MainViewController: UIViewController {
     var output: MainViewOutput!
     private var disposeBag = DisposeBag()
 
+    // MARK: Properties
+    var countdowns: [CountDown] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+
     @IBOutlet weak var tableView: UITableView!
 
     // MARK: Life cycle
@@ -28,19 +35,24 @@ class MainViewController: UIViewController {
 
 extension MainViewController: MainViewInput {
     func showCountdowns(list: [CountDown]) {
-
+        countdowns = list
     }
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return countdowns.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mainCell, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mainCell,
+                                                       for: indexPath) else {
+            fatalError("Couldn't init cell")
+        }
 
-        return cell ?? MainCell()
+        cell.setup(with: countdowns[indexPath.row])
+
+        return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

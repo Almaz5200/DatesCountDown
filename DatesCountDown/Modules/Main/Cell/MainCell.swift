@@ -12,15 +12,7 @@ class MainCell: UITableViewCell {
 
     @IBOutlet weak var countdownLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    public func setup(with countdown: CountDown) {
+        countdownLabel.text = countdown.dateEnd.description
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
