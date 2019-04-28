@@ -9,9 +9,17 @@
 import Foundation
 
 protocol CreateTimerViewInput: class {}
-protocol CreateTimerViewOutput {}
+protocol CreateTimerViewOutput {
+    func createButtonTappedWith(name: String, date: Date)
+}
 
-protocol CreateTimerInteractorInput {}
-protocol CreateTimerInteractorOutput: class {}
+protocol CreateTimerInteractorInput {
+    func createCountdownWith(name: String, date: Date)
+}
+protocol CreateTimerInteractorOutput: class {
+    func didCreatedCountdown()
+}
 
-protocol CreateTimerRouterInput {}
+protocol CreateTimerRouterInput {
+    func popBack()
+}

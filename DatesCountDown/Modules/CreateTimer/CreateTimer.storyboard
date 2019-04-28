@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pco-X0-AfG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pco-X0-AfG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +17,68 @@
                     <view key="view" contentMode="scaleToFill" id="i6x-44-Kas">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Выберите дату" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qC0-en-BMW">
+                                <rect key="frame" x="16" y="88" width="343" height="24"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создайте таймер" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhO-cZ-FKn">
+                                <rect key="frame" x="16" y="36" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Назовите таймер" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXn-07-K2n">
+                                <rect key="frame" x="16" y="128" width="343" height="24"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-4n-6W3">
+                                <rect key="frame" x="16" y="168" width="343" height="100"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.86274509799999999" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ff2-jd-fxb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="12f-yf-3kf" firstAttribute="trailing" secondItem="qC0-en-BMW" secondAttribute="trailing" constant="16" id="0fT-hx-S5y"/>
+                            <constraint firstItem="dXn-07-K2n" firstAttribute="leading" secondItem="12f-yf-3kf" secondAttribute="leading" constant="16" id="0hE-hF-Fdn"/>
+                            <constraint firstItem="12f-yf-3kf" firstAttribute="trailing" secondItem="c9Z-4n-6W3" secondAttribute="trailing" constant="16" id="Bca-YD-pwR"/>
+                            <constraint firstItem="12f-yf-3kf" firstAttribute="trailing" secondItem="nhO-cZ-FKn" secondAttribute="trailing" constant="16" id="BnN-Qm-i7n"/>
+                            <constraint firstItem="nhO-cZ-FKn" firstAttribute="leading" secondItem="12f-yf-3kf" secondAttribute="leading" constant="16" id="GE4-dx-d4S"/>
+                            <constraint firstItem="dXn-07-K2n" firstAttribute="top" secondItem="qC0-en-BMW" secondAttribute="bottom" constant="16" id="KBZ-Dq-KX3"/>
+                            <constraint firstItem="c9Z-4n-6W3" firstAttribute="top" secondItem="dXn-07-K2n" secondAttribute="bottom" constant="16" id="PXc-qc-PU0"/>
+                            <constraint firstItem="12f-yf-3kf" firstAttribute="trailing" secondItem="dXn-07-K2n" secondAttribute="trailing" constant="16" id="ULQ-R1-Dwr"/>
+                            <constraint firstItem="nhO-cZ-FKn" firstAttribute="top" secondItem="12f-yf-3kf" secondAttribute="top" constant="16" id="aJD-04-PC6"/>
+                            <constraint firstItem="qC0-en-BMW" firstAttribute="top" secondItem="nhO-cZ-FKn" secondAttribute="bottom" constant="16" id="myj-fh-n6C"/>
+                            <constraint firstItem="c9Z-4n-6W3" firstAttribute="leading" secondItem="12f-yf-3kf" secondAttribute="leading" constant="16" id="nLZ-pJ-Bn5"/>
+                            <constraint firstItem="qC0-en-BMW" firstAttribute="leading" secondItem="12f-yf-3kf" secondAttribute="leading" constant="16" id="p6f-wi-rwH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="12f-yf-3kf"/>
                     </view>
+                    <connections>
+                        <outlet property="createButton" destination="c9Z-4n-6W3" id="GdJ-EL-lbV"/>
+                        <outlet property="pickDateField" destination="qC0-en-BMW" id="1AB-Tn-SNS"/>
+                        <outlet property="timerTitleField" destination="dXn-07-K2n" id="jvR-Ep-hbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hus-6h-h4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="165"/>
+            <point key="canvasLocation" x="-178.40000000000001" y="164.16791604197903"/>
         </scene>
     </scenes>
 </document>

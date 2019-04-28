@@ -12,4 +12,10 @@ class CreateTimerRouter {
 	var viewController: UIViewController!
 }
 
-extension CreateTimerRouter: CreateTimerRouterInput {}
+extension CreateTimerRouter: CreateTimerRouterInput {
+
+    func popBack() {
+        viewController.navigationController?.popViewController(animated: true)
+    }
+
+}

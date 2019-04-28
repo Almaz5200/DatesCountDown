@@ -15,6 +15,7 @@
 		362B5D7C19C61EDEAEA27154 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91930040FEFD15B00790750A /* MainBuilder.swift */; };
 		394E6D602263836C00C375A9 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E6D5F2263836C00C375A9 /* MainCell.swift */; };
 		395D40FC2263A3AB0066245E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D40FB2263A3AB0066245E /* R.generated.swift */; };
+		396B49F12275F327005E4372 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396B49F02275F327005E4372 /* Date.swift */; };
 		39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6539224221650077EDF1 /* AppDelegate.swift */; };
 		39FE653F224221650077EDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE653D224221650077EDF1 /* Main.storyboard */; };
 		39FE6541224221680077EDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6540224221680077EDF1 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerViewController.swift; sourceTree = "<group>"; };
 		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		395D40FB2263A3AB0066245E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		396B49F02275F327005E4372 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		39FE6536224221650077EDF1 /* DatesCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatesCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FE6539224221650077EDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FE653E224221650077EDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,6 +164,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		396B49EF2275F30B005E4372 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				396B49F02275F327005E4372 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		39FE652D224221650077EDF1 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +196,7 @@
 				395D40F62263A0A70066245E /* Resources */,
 				55A7803C345BA6A9BD5CC58C /* Modules */,
 				39FE65542247AB140077EDF1 /* Models */,
+				396B49EF2275F30B005E4372 /* Extensions */,
 			);
 			path = DatesCountDown;
 			sourceTree = "<group>";
@@ -563,6 +574,7 @@
 				8564D86CB80811BF4E69BDB2 /* EditTimerContract.swift in Sources */,
 				53CB68FAA939F5E51C0A39EF /* EditTimerViewController.swift in Sources */,
 				39FE65562247ABAF0077EDF1 /* CountDownProtocol.swift in Sources */,
+				396B49F12275F327005E4372 /* Date.swift in Sources */,
 				0362168DFD30B4DD179A7D72 /* EditTimerPresenter.swift in Sources */,
 				093E53F3B062961C635DC2C1 /* EditTimerInteractor.swift in Sources */,
 				DAFBA80C4B245ABD4910A5D4 /* EditTimerRouter.swift in Sources */,
