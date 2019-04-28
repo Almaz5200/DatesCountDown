@@ -6,6 +6,7 @@
 //  Copyright © 2019 atrubacheev. All rights reserved.
 //
 
+import RxCocoa
 import RxSwift
 import UIKit
 
@@ -27,10 +28,31 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        output.viewDidInited()
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = nil
+        setupViews()
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
+    // MARK: Private methods
+    private func setupViews() {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
+
+        addButton.rx.tap
+            .subscribe { _ in
+                self.output.addButtonTapped()
+            }
+            .disposed(by: disposeBag)
+
+        navigationItem.setRightBarButton(addButton, animated: true)
+    }
+
 }
 
 extension MainViewController: MainViewInput {

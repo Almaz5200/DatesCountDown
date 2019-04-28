@@ -13,13 +13,21 @@ class MainPresenter {
 }
 
 extension MainPresenter: MainViewOutput {
+
+    func addButtonTapped() {
+        router.showTimerCreation()
+    }
+
     func viewDidInited() {
         interactor.fetchCountdowns()
     }
+
 }
 
 extension MainPresenter: MainInteractorOutput {
+
     func fetchedConuntdowns(list: [CountDown]) {
         view?.showCountdowns(list: list)
     }
+
 }

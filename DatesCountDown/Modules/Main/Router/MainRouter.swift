@@ -14,7 +14,8 @@ class MainRouter {
 
 extension MainRouter: MainRouterInput {
     func showTimerCreation() {
-
+        let vc = CreateTimerBuilder.build()
+        viewController.navigationController?.pushViewController(vc, animated: true)
     }
 
     func showTimerEditing() {

@@ -13,6 +13,7 @@ protocol MainViewInput: class {
 }
 protocol MainViewOutput {
     func viewDidInited()
+    func addButtonTapped()
 }
 
 protocol MainInteractorInput {
