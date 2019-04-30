@@ -33,6 +33,8 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = nil
+        tableView.allowsSelection = false
+
         setupViews()
     }
 
@@ -78,6 +80,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 230
+        return 120
     }
 }

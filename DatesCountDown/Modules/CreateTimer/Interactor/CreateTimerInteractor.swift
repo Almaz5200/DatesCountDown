@@ -30,9 +30,9 @@ extension CreateTimerInteractor: CreateTimerInteractorInput {
         let countDown = RealmCountDown()
         countDown.dateEnd = date
         countDown.countdownTitle = name
-        countDown.id = realm.objects(RealmCountDown.self)
+        countDown.id = (realm.objects(RealmCountDown.self)
             .sorted(byKeyPath: "id")
-            .last?.id ?? 0
+            .last?.id ?? -1) + 1
 
         do {
             try realm.write {

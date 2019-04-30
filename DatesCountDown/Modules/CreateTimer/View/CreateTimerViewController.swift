@@ -47,8 +47,9 @@ class CreateTimerViewController: UIViewController {
 
         picker.rx.date
             .subscribe(onNext: {
-                self.selectedDate = $0
-                self.pickDateField.text = $0.toHooman
+                let date = $0.rounded
+                self.selectedDate = date
+                self.pickDateField.text = date.toHooman
             }).disposed(by: disposeBag)
     }
 }
