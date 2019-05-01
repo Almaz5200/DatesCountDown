@@ -21,7 +21,7 @@ extension Date {
     var rounded: Date {
         var components = NSCalendar.current.dateComponents([.second], from: self)
         let second = components.second ?? 30
-        components.second = second >= 30 ? 60 - second : -second
+        components.second = -second
         return Calendar.current.date(byAdding: components, to: self) ?? Date()
     }
 
