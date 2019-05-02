@@ -11,19 +11,15 @@ import UIKit
 
 class MainBuilder {
     static func build() -> MainViewController {
-        let viewController = MainViewController()
-
 		let router = MainRouter()
 
-        let presenter = MainPresenter()
+        let interactor = MainInteractor()
+        let presenter = MainPresenter(interactor: interactor)
+        let viewController = MainViewController(output: presenter)
+
         presenter.view = viewController
         presenter.router = router
-
-        let interactor = MainInteractor()
         interactor.output = presenter
-
-        presenter.interactor = interactor
-        viewController.output = presenter
 
         router.viewController = viewController
 

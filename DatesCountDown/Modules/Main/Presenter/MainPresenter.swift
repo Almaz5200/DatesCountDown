@@ -10,6 +10,10 @@ class MainPresenter {
     weak var view: MainViewInput?
     var interactor: MainInteractorInput!
     var router: MainRouterInput!
+
+    init(interactor: MainInteractorInput) {
+        self.interactor = interactor
+    }
 }
 
 extension MainPresenter: MainViewOutput {
