@@ -10,17 +10,31 @@ import UIKit
 
 class MainCell: UITableViewCell {
 
-    @IBOutlet weak var countdownLabel: UILabel!
-    @IBOutlet weak var countdownTitle: UILabel!
+    let countdownLabel = UILabel().with {
+        $0.font = .systemFont(ofSize: 24)
+        $0.textAlignment = .center
+    }
+    let countdownTitle: UILabel! = UILabel().with {
+        $0.font = .systemFont(ofSize: 17)
+        $0.textAlignment = .center
+    }
 
     public var countdown: CountDown!
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+        addSubviews()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     public func setup(with countdown: CountDown) {
         self.countdown = countdown
 
         updateLabel()
-
-        let queue = DispatchQueue.global(qos: .default)
 
         Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [ unowned self ] _ in
             self.updateLabel()
@@ -28,6 +42,32 @@ class MainCell: UITableViewCell {
 
         countdownTitle.text = countdown.countdownTitle
 
+    }
+
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        layout()
+
+        return CGSize(width: window?.frame.width ?? 0, height: countdownTitle.frame.maxY + 16)
+    }
+
+    private func layout() {
+        countdownLabel.pin
+            .top(26)
+            .left(16)
+            .right(16)
+            .height(29)
+
+        countdownTitle.pin
+            .below(of: countdownLabel)
+            .marginTop(22)
+            .left(16)
+            .right(16)
+            .height(21)
+    }
+
+    private func addSubviews() {
+        addSubviews([countdownLabel,
+                     countdownTitle])
     }
 
     private func updateLabel() {

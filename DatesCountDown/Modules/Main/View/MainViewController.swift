@@ -6,11 +6,12 @@
 //  Copyright © 2019 atrubacheev. All rights reserved.
 //
 
+import PinLayout
 import RxCocoa
 import RxSwift
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
 
     var output: MainViewOutput!
     private var disposeBag = DisposeBag()
@@ -18,7 +19,7 @@ class MainViewController: UIViewController {
     // MARK: Properties
     var countdowns: [CountDown] = []
 
-    @IBOutlet weak var tableView: UITableView!
+    let tableView = UITableView()
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class MainViewController: UIViewController {
         tableView.tableFooterView = nil
         tableView.allowsSelection = false
 
+        addSubviews()
         setupViews()
     }
 
@@ -38,7 +40,24 @@ class MainViewController: UIViewController {
         super.viewDidAppear(animated)
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        layout()
+    }
+
     // MARK: Private methods
+    private func addSubviews() {
+        view.addSubviews([tableView])
+    }
+
+    private func layout() {
+        tableView.pin
+            .top(view.pin.safeArea.top)
+            .left()
+            .right()
+            .bottom()
+    }
+
     private func setupViews() {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
 
@@ -66,10 +85,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.mainCell,
-                                                       for: indexPath) else {
-            fatalError("Couldn't init cell")
-        }
+        let cell = tableView.cell(at: indexPath, for: MainCell.self)
 
         cell.setup(with: countdowns[indexPath.row])
 
@@ -77,7 +93,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return UITableView.automaticDimension
     }
 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {

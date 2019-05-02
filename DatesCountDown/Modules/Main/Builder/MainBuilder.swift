@@ -11,9 +11,7 @@ import UIKit
 
 class MainBuilder {
     static func build() -> MainViewController {
-        guard let viewController = R.storyboard.main.instantiateInitialViewController() else {
-            fatalError("Couldn't init \(String(describing: self))")
-        }
+        let viewController = MainViewController()
 
 		let router = MainRouter()
 

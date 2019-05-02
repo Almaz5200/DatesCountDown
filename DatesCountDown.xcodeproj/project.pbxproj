@@ -13,17 +13,17 @@
 		15C499F2FE6BC43701B2B6E6 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0718E096D54CE56E93E3ED58 /* MainRouter.swift */; };
 		2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496BDFC4AEAFD30850AA2E39 /* CreateTimerBuilder.swift */; };
 		362B5D7C19C61EDEAEA27154 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91930040FEFD15B00790750A /* MainBuilder.swift */; };
+		391CA0AF227B46620079D7E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391CA0AE227B46620079D7E2 /* BaseViewController.swift */; };
 		394E6D602263836C00C375A9 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E6D5F2263836C00C375A9 /* MainCell.swift */; };
 		395D40FC2263A3AB0066245E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D40FB2263A3AB0066245E /* R.generated.swift */; };
 		396B49F12275F327005E4372 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396B49F02275F327005E4372 /* Date.swift */; };
 		39EC0B0E227AC5F200F8F8E5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */; };
+		39EC0B11227B302300F8F8E5 /* NSObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B10227B302300F8F8E5 /* NSObjectProtocol.swift */; };
+		39EC0B13227B34A800F8F8E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B12227B34A800F8F8E5 /* UIView.swift */; };
 		39F24BC6227894650092DCD8 /* Timeinterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F24BC5227894650092DCD8 /* Timeinterval.swift */; };
 		39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6539224221650077EDF1 /* AppDelegate.swift */; };
-		39FE653F224221650077EDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE653D224221650077EDF1 /* Main.storyboard */; };
 		39FE6541224221680077EDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6540224221680077EDF1 /* Assets.xcassets */; };
 		39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6542224221680077EDF1 /* LaunchScreen.storyboard */; };
-		39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */; };
-		39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654D2247A8580077EDF1 /* EditTimer.storyboard */; };
 		39FE65562247ABAF0077EDF1 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65552247ABAF0077EDF1 /* CountDown.swift */; };
 		39FE65592247ACC10077EDF1 /* RealmCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65582247ACC10077EDF1 /* RealmCountDown.swift */; };
 		53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */; };
@@ -50,19 +50,19 @@
 		168F7997FF1A24BA9321BD9C /* EditTimerInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerInteractor.swift; sourceTree = "<group>"; };
 		2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerViewController.swift; sourceTree = "<group>"; };
 		32EDA4D6A2925DA487C826B3 /* Pods-DatesCountDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatesCountDown.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown.release.xcconfig"; sourceTree = "<group>"; };
+		391CA0AE227B46620079D7E2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		395D40FB2263A3AB0066245E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		396B49F02275F327005E4372 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		39EC0B10227B302300F8F8E5 /* NSObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocol.swift; sourceTree = "<group>"; };
+		39EC0B12227B34A800F8F8E5 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		39F24BC5227894650092DCD8 /* Timeinterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeinterval.swift; sourceTree = "<group>"; };
 		39FE6536224221650077EDF1 /* DatesCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatesCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FE6539224221650077EDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39FE653E224221650077EDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39FE6540224221680077EDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39FE6543224221680077EDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39FE6545224221680077EDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTimer.storyboard; sourceTree = "<group>"; };
-		39FE654D2247A8580077EDF1 /* EditTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditTimer.storyboard; sourceTree = "<group>"; };
 		39FE65552247ABAF0077EDF1 /* CountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
 		39FE65582247ACC10077EDF1 /* RealmCountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCountDown.swift; sourceTree = "<group>"; };
 		3FBF044904D8EB0034A43F76 /* EditTimerRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerRouter.swift; sourceTree = "<group>"; };
@@ -142,6 +142,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		391CA0AD227B46490079D7E2 /* UI Classes */ = {
+			isa = PBXGroup;
+			children = (
+				391CA0AE227B46620079D7E2 /* BaseViewController.swift */,
+			);
+			path = "UI Classes";
+			sourceTree = "<group>";
+		};
 		394E6D5E2263833700C375A9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +184,8 @@
 				396B49F02275F327005E4372 /* Date.swift */,
 				39F24BC5227894650092DCD8 /* Timeinterval.swift */,
 				39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */,
+				39EC0B12227B34A800F8F8E5 /* UIView.swift */,
+				39EC0B10227B302300F8F8E5 /* NSObjectProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 				55A7803C345BA6A9BD5CC58C /* Modules */,
 				39FE65542247AB140077EDF1 /* Models */,
 				396B49EF2275F30B005E4372 /* Extensions */,
+				391CA0AD227B46490079D7E2 /* UI Classes */,
 			);
 			path = DatesCountDown;
 			sourceTree = "<group>";
@@ -286,7 +297,6 @@
 				BBDC7642FD8F37F7467AA301 /* Interactor */,
 				F4D9EB21EC94E7E814080BA3 /* Router */,
 				8915BCE98B4614592ADA2D5A /* Builder */,
-				39FE653D224221650077EDF1 /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -316,7 +326,6 @@
 				18EB5F09E69695B3031BCF95 /* Interactor */,
 				29F715EA678C84B24CD2482F /* Router */,
 				FADC313C16E05AD3F239B604 /* Builder */,
-				39FE654D2247A8580077EDF1 /* EditTimer.storyboard */,
 			);
 			path = EditTimer;
 			sourceTree = "<group>";
@@ -330,7 +339,6 @@
 				59527EC17F55AF77A6649934 /* Interactor */,
 				3F2A396594BAAF14BED08524 /* Router */,
 				6D0057427110B711ECB748DB /* Builder */,
-				39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */,
 			);
 			path = CreateTimer;
 			sourceTree = "<group>";
@@ -459,9 +467,6 @@
 			files = (
 				39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */,
 				39FE6541224221680077EDF1 /* Assets.xcassets in Resources */,
-				39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */,
-				39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */,
-				39FE653F224221650077EDF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +482,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -488,6 +494,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -536,7 +543,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -570,6 +577,7 @@
 				39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */,
 				BB9DBB81649F82758C347253 /* MainContract.swift in Sources */,
 				F308CB5C81F2F2BA26BE8B72 /* MainViewController.swift in Sources */,
+				39EC0B11227B302300F8F8E5 /* NSObjectProtocol.swift in Sources */,
 				394E6D602263836C00C375A9 /* MainCell.swift in Sources */,
 				39FE65592247ACC10077EDF1 /* RealmCountDown.swift in Sources */,
 				39F24BC6227894650092DCD8 /* Timeinterval.swift in Sources */,
@@ -590,23 +598,17 @@
 				396B49F12275F327005E4372 /* Date.swift in Sources */,
 				0362168DFD30B4DD179A7D72 /* EditTimerPresenter.swift in Sources */,
 				093E53F3B062961C635DC2C1 /* EditTimerInteractor.swift in Sources */,
+				39EC0B13227B34A800F8F8E5 /* UIView.swift in Sources */,
 				39EC0B0E227AC5F200F8F8E5 /* UITableView.swift in Sources */,
 				DAFBA80C4B245ABD4910A5D4 /* EditTimerRouter.swift in Sources */,
 				53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */,
+				391CA0AF227B46620079D7E2 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		39FE653D224221650077EDF1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				39FE653E224221650077EDF1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		39FE6542224221680077EDF1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
