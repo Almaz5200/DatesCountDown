@@ -16,6 +16,7 @@
 		394E6D602263836C00C375A9 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E6D5F2263836C00C375A9 /* MainCell.swift */; };
 		395D40FC2263A3AB0066245E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D40FB2263A3AB0066245E /* R.generated.swift */; };
 		396B49F12275F327005E4372 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396B49F02275F327005E4372 /* Date.swift */; };
+		39EC0B0E227AC5F200F8F8E5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */; };
 		39F24BC6227894650092DCD8 /* Timeinterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F24BC5227894650092DCD8 /* Timeinterval.swift */; };
 		39FE653A224221650077EDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE6539224221650077EDF1 /* AppDelegate.swift */; };
 		39FE653F224221650077EDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE653D224221650077EDF1 /* Main.storyboard */; };
@@ -23,7 +24,7 @@
 		39FE6544224221680077EDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE6542224221680077EDF1 /* LaunchScreen.storyboard */; };
 		39FE654C2247A8420077EDF1 /* CreateTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */; };
 		39FE654E2247A8580077EDF1 /* EditTimer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FE654D2247A8580077EDF1 /* EditTimer.storyboard */; };
-		39FE65562247ABAF0077EDF1 /* CountDownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */; };
+		39FE65562247ABAF0077EDF1 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65552247ABAF0077EDF1 /* CountDown.swift */; };
 		39FE65592247ACC10077EDF1 /* RealmCountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE65582247ACC10077EDF1 /* RealmCountDown.swift */; };
 		53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */; };
 		53CB68FAA939F5E51C0A39EF /* EditTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */; };
@@ -51,6 +52,7 @@
 		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		395D40FB2263A3AB0066245E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		396B49F02275F327005E4372 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		39F24BC5227894650092DCD8 /* Timeinterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeinterval.swift; sourceTree = "<group>"; };
 		39FE6536224221650077EDF1 /* DatesCountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatesCountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FE6539224221650077EDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		39FE6545224221680077EDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FE654B2247A8420077EDF1 /* CreateTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateTimer.storyboard; sourceTree = "<group>"; };
 		39FE654D2247A8580077EDF1 /* EditTimer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditTimer.storyboard; sourceTree = "<group>"; };
-		39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownProtocol.swift; sourceTree = "<group>"; };
+		39FE65552247ABAF0077EDF1 /* CountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
 		39FE65582247ACC10077EDF1 /* RealmCountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCountDown.swift; sourceTree = "<group>"; };
 		3FBF044904D8EB0034A43F76 /* EditTimerRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerRouter.swift; sourceTree = "<group>"; };
 		496BDFC4AEAFD30850AA2E39 /* CreateTimerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerBuilder.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				396B49F02275F327005E4372 /* Date.swift */,
 				39F24BC5227894650092DCD8 /* Timeinterval.swift */,
+				39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -208,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				39FE65572247ACB50077EDF1 /* Realm */,
-				39FE65552247ABAF0077EDF1 /* CountDownProtocol.swift */,
+				39FE65552247ABAF0077EDF1 /* CountDown.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -577,10 +580,11 @@
 				2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */,
 				8564D86CB80811BF4E69BDB2 /* EditTimerContract.swift in Sources */,
 				53CB68FAA939F5E51C0A39EF /* EditTimerViewController.swift in Sources */,
-				39FE65562247ABAF0077EDF1 /* CountDownProtocol.swift in Sources */,
+				39FE65562247ABAF0077EDF1 /* CountDown.swift in Sources */,
 				396B49F12275F327005E4372 /* Date.swift in Sources */,
 				0362168DFD30B4DD179A7D72 /* EditTimerPresenter.swift in Sources */,
 				093E53F3B062961C635DC2C1 /* EditTimerInteractor.swift in Sources */,
+				39EC0B0E227AC5F200F8F8E5 /* UITableView.swift in Sources */,
 				DAFBA80C4B245ABD4910A5D4 /* EditTimerRouter.swift in Sources */,
 				53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */,
 			);

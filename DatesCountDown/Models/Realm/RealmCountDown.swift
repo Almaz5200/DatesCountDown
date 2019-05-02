@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class RealmCountDown: Object, CountDown {
+class RealmCountDown: Object {
     @objc dynamic var dateEnd: Date = Date()
     @objc dynamic var countdownTitle: String = ""
     // swiftlint:disable identifier_name

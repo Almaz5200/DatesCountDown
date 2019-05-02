@@ -14,6 +14,10 @@ class MainPresenter {
 
 extension MainPresenter: MainViewOutput {
 
+    func removeTapped(with countdown: CountDown) {
+        interactor.remove(countdown: countdown)
+    }
+
     func addButtonTapped() {
         router.showTimerCreation()
     }

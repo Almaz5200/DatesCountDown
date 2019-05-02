@@ -16,11 +16,7 @@ class MainViewController: UIViewController {
     private var disposeBag = DisposeBag()
 
     // MARK: Properties
-    var countdowns: [CountDown] = [] {
-        didSet {
-            tableView.reloadData()
-        }
-    }
+    var countdowns: [CountDown] = []
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -60,6 +56,7 @@ class MainViewController: UIViewController {
 extension MainViewController: MainViewInput {
     func showCountdowns(list: [CountDown]) {
         countdowns = list
+        tableView.reloadData()
     }
 }
 
@@ -81,5 +78,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { _, index in
+            self.output.removeTapped(with: self.countdowns[index.row])
+            tableView.update {
+                tableView.deleteRows(at: [index], with: .right)
+                self.countdowns.remove(at: index.row)
+            }
+        }
+        return [deleteAction]
     }
 }

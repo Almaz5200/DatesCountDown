@@ -14,10 +14,12 @@ protocol MainViewInput: class {
 protocol MainViewOutput {
     func viewDidInited()
     func addButtonTapped()
+    func removeTapped(with countdown: CountDown)
 }
 
 protocol MainInteractorInput {
     func fetchCountdowns()
+    func remove(countdown: CountDown)
 }
 protocol MainInteractorOutput: class {
     func fetchedConuntdowns(list: [CountDown])
