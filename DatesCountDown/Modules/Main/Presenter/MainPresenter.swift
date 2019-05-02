@@ -22,6 +22,10 @@ extension MainPresenter: MainViewOutput {
         router.showTimerCreation()
     }
 
+    func editTapped(with countdown: CountDown) {
+        router.showTimerEditing(with: countdown)
+    }
+
     func viewDidInited() {
         interactor.fetchCountdowns()
     }

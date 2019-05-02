@@ -12,4 +12,8 @@ class EditTimerRouter {
 	var viewController: UIViewController!
 }
 
-extension EditTimerRouter: EditTimerRouterInput {}
+extension EditTimerRouter: EditTimerRouterInput {
+    func returnToRoot() {
+        viewController.navigationController?.popViewController(animated: true)
+    }
+}

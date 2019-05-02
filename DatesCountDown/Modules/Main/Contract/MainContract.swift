@@ -14,6 +14,7 @@ protocol MainViewInput: class {
 protocol MainViewOutput {
     func viewDidInited()
     func addButtonTapped()
+    func editTapped(with countdown: CountDown)
     func removeTapped(with countdown: CountDown)
 }
 
@@ -27,5 +28,5 @@ protocol MainInteractorOutput: class {
 
 protocol MainRouterInput {
     func showTimerCreation()
-    func showTimerEditing()
+    func showTimerEditing(with countdown: CountDown)
 }

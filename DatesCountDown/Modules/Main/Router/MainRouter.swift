@@ -18,7 +18,8 @@ extension MainRouter: MainRouterInput {
         viewController.navigationController?.pushViewController(vc, animated: true)
     }
 
-    func showTimerEditing() {
-
+    func showTimerEditing(with countdown: CountDown) {
+        let vc = EditTimerBuilder.build(with: countdown)
+        viewController.navigationController?.pushViewController(vc, animated: true)
     }
 }

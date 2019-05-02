@@ -81,13 +81,18 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { _, index in
-            self.output.removeTapped(with: self.countdowns[index.row])
+        let countdown = countdowns[indexPath.row]
+
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { _, _ in
+            self.output.removeTapped(with: countdown)
             tableView.update {
-                tableView.deleteRows(at: [index], with: .right)
-                self.countdowns.remove(at: index.row)
+                tableView.deleteRows(at: [indexPath], with: .right)
+                self.countdowns.remove(at: indexPath.row)
             }
         }
-        return [deleteAction]
+        let editAction = UITableViewRowAction(style: .normal, title: "Edit") { _, _ in
+            self.output.editTapped(with: countdown)
+        }
+        return [deleteAction, editAction]
     }
 }

@@ -9,9 +9,9 @@
 import UIKit
 
 extension UITableView {
-    func update(_ updates: (() -> Void)) {
-        self.beginUpdates()
-        updates()
-        self.endUpdates()
+    func update(_ update: (() -> Void)) {
+        beginUpdates()
+        update()
+        endUpdates()
     }
 }

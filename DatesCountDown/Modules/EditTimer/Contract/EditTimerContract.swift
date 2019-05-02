@@ -9,9 +9,17 @@
 import Foundation
 
 protocol EditTimerViewInput: class {}
-protocol EditTimerViewOutput {}
+protocol EditTimerViewOutput {
+    func saveTapped(with countdown: CountDown)
+}
 
-protocol EditTimerInteractorInput {}
-protocol EditTimerInteractorOutput: class {}
+protocol EditTimerInteractorInput {
+    func save(countdown: CountDown)
+}
+protocol EditTimerInteractorOutput: class {
+    func didSaved()
+}
 
-protocol EditTimerRouterInput {}
+protocol EditTimerRouterInput {
+    func returnToRoot()
+}

@@ -12,8 +12,14 @@ class EditTimerPresenter {
     var router: EditTimerRouterInput!
 }
 
-extension EditTimerPresenter: EditTimerViewOutput {}
+extension EditTimerPresenter: EditTimerViewOutput {
+    func saveTapped(with countdown: CountDown) {
+        interactor.save(countdown: countdown)
+    }
+}
 
 extension EditTimerPresenter: EditTimerInteractorOutput {
-
+    func didSaved() {
+        router.returnToRoot()
+    }
 }

@@ -10,10 +10,11 @@ import Foundation
 import UIKit
 
 class EditTimerBuilder {
-    static func build() -> EditTimerViewController {
+    static func build(with countdown: CountDown) -> EditTimerViewController {
         guard let viewController = R.storyboard.editTimer.instantiateInitialViewController() else {
             fatalError("Couldn't init \(String(describing: self))")
         }
+        viewController.countdown = countdown
 
 		let router = EditTimerRouter()
 

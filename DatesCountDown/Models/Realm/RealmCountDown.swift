@@ -19,3 +19,10 @@ class RealmCountDown: Object {
         return "id"
     }
 }
+
+extension RealmCountDown {
+    static func ~>(lhs: inout RealmCountDown, rhs: CountDown) {
+        lhs.dateEnd = rhs.dateEnd
+        lhs.countdownTitle = rhs.countdownTitle
+    }
+}
