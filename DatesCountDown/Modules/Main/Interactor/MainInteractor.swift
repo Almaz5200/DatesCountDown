@@ -7,11 +7,15 @@
 //
 
 import RealmSwift
+import RxRealm
+import RxSwift
 
 class MainInteractor {
+
     weak var output: MainInteractorOutput?
 
-    let realm: Realm
+    private let realm: Realm
+    private let disposeBag = DisposeBag()
 
     init() {
         do {
@@ -19,6 +23,14 @@ class MainInteractor {
         } catch {
             fatalError("Couldn't init realm")
         }
+        //startObservingChanges()
+    }
+
+    private func startObservingChanges() {
+        realm.autorefresh = true
+        realm.objects(RealmCountDown.self).observe { _ in
+            self.fetchCountdowns()
+        }.invalidate()
     }
 }
 
@@ -37,9 +49,14 @@ extension MainInteractor: MainInteractorInput {
     }
 
     func fetchCountdowns() {
-        let countdowns: [CountDown] = realm.objects(RealmCountDown.self)
-            .map { CountDown(with: $0) }
-            .sorted(by: { $0.id < $1.id })
-        output?.fetchedConuntdowns(list: countdowns)
+        let countdowns = realm.objects(RealmCountDown.self)
+        Observable.collection(from: countdowns)
+            .map { $0.map { CountDown(with: $0) }
+                .sorted(by: { $0.id < $1.id })
+            }
+            .subscribe (onNext: {
+                self.output?.fetchedConuntdowns(list: $0)
+            })
+            .disposed(by: disposeBag)
     }
 }

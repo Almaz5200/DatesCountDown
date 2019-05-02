@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'DatesCountDown' do
 	pod 'RxSwift',    '~> 4.0'
+  pod 'RxRealm'
 	pod 'RxCocoa',    '~> 4.0'
 
 	pod 'R.swift'

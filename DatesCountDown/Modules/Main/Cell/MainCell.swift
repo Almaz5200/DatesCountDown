@@ -13,16 +13,30 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var countdownLabel: UILabel!
     @IBOutlet weak var countdownTitle: UILabel!
 
-    public func setup(with countdown: CountDown) {
+    public var countdown: CountDown!
 
-        self.countdownLabel.text = countdown.dateEnd
-            .timeIntervalSinceNow.format(using: [.day, .hour, .minute, .second])
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [ unowned self ] _ in
-            self.countdownLabel.text = countdown.dateEnd
-                .timeIntervalSinceNow.format(using: [.day, .hour, .minute, .second])
+    public func setup(with countdown: CountDown) {
+        self.countdown = countdown
+
+        updateLabel()
+
+        let queue = DispatchQueue.global(qos: .default)
+
+        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [ unowned self ] _ in
+            self.updateLabel()
         }
 
         countdownTitle.text = countdown.countdownTitle
 
+    }
+
+    private func updateLabel() {
+        if countdown.dateEnd > Date() {
+            self.countdownLabel.text = countdown.dateEnd
+                .timeIntervalSinceNow.format(using: [.day, .hour, .minute, .second])
+        } else {
+            self.countdownLabel.text = countdown.dateEnd
+                .timeIntervalSinceNow.format(using: [.day, .hour, .minute, .second]) + " ago"
+        }
     }
 }

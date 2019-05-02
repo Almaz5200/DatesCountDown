@@ -49,6 +49,7 @@
 		14EC930B2E3D1A868634AF32 /* CreateTimerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerPresenter.swift; sourceTree = "<group>"; };
 		168F7997FF1A24BA9321BD9C /* EditTimerInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerInteractor.swift; sourceTree = "<group>"; };
 		2FCCC976D4872DE4F938AFED /* EditTimerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerViewController.swift; sourceTree = "<group>"; };
+		32EDA4D6A2925DA487C826B3 /* Pods-DatesCountDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatesCountDown.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown.release.xcconfig"; sourceTree = "<group>"; };
 		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		395D40FB2263A3AB0066245E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		396B49F02275F327005E4372 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		9D8BF424DD31E358558376E7 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9E2223807497BB6C7ED49BCA /* Pods_DatesCountDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatesCountDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC06CCA6D0EDECC885123CAB /* EditTimerPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerPresenter.swift; sourceTree = "<group>"; };
+		C535F54E52E691F6F0ACB805 /* Pods-DatesCountDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatesCountDown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatesCountDown/Pods-DatesCountDown.debug.xcconfig"; sourceTree = "<group>"; };
 		CAA28581F4931B5E3196535F /* EditTimerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditTimerBuilder.swift; sourceTree = "<group>"; };
 		DAB581C996999449D06B586E /* CreateTimerInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerInteractor.swift; sourceTree = "<group>"; };
 		EF44DE92959E54E7A74031B7 /* CreateTimerContract.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateTimerContract.swift; sourceTree = "<group>"; };
@@ -338,6 +340,8 @@
 			children = (
 				789C54077B177D0087B8CE50 /* Pods-DatesCountDown.debug.xcconfig */,
 				0119B1608A6FD957E96A5038 /* Pods-DatesCountDown.release.xcconfig */,
+				C535F54E52E691F6F0ACB805 /* Pods-DatesCountDown.debug.xcconfig */,
+				32EDA4D6A2925DA487C826B3 /* Pods-DatesCountDown.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -477,6 +481,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -487,6 +492,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,7 +536,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
