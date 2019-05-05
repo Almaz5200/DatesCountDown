@@ -14,6 +14,15 @@ struct CountDown {
     var countdownTitle: String
     var id: Int
 
+    var asRealm: RealmCountDown {
+        let realmCountDown = RealmCountDown()
+        realmCountDown.dateEnd = self.dateEnd
+        realmCountDown.countdownTitle = self.countdownTitle
+        realmCountDown.id = self.id
+        
+        return realmCountDown
+    }
+
     init(with realm: RealmCountDown) {
         self.dateEnd = realm.dateEnd
         self.countdownTitle = realm.countdownTitle

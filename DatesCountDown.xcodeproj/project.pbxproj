@@ -17,6 +17,8 @@
 		394E6D602263836C00C375A9 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E6D5F2263836C00C375A9 /* MainCell.swift */; };
 		395D40FC2263A3AB0066245E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D40FB2263A3AB0066245E /* R.generated.swift */; };
 		396B49F12275F327005E4372 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396B49F02275F327005E4372 /* Date.swift */; };
+		39E10FEB227ED1E5003897AF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E10FEA227ED1E5003897AF /* Repository.swift */; };
+		39E10FED227ED1F6003897AF /* RepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E10FEC227ED1F6003897AF /* RepositoryProtocol.swift */; };
 		39EC0B0E227AC5F200F8F8E5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */; };
 		39EC0B11227B302300F8F8E5 /* NSObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B10227B302300F8F8E5 /* NSObjectProtocol.swift */; };
 		39EC0B13227B34A800F8F8E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EC0B12227B34A800F8F8E5 /* UIView.swift */; };
@@ -54,6 +56,8 @@
 		394E6D5F2263836C00C375A9 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		395D40FB2263A3AB0066245E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		396B49F02275F327005E4372 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		39E10FEA227ED1E5003897AF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		39E10FEC227ED1F6003897AF /* RepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocol.swift; sourceTree = "<group>"; };
 		39EC0B0D227AC5F200F8F8E5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		39EC0B10227B302300F8F8E5 /* NSObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocol.swift; sourceTree = "<group>"; };
 		39EC0B12227B34A800F8F8E5 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -190,6 +194,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		39E10FE9227ED1A7003897AF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				39E10FEA227ED1E5003897AF /* Repository.swift */,
+				39E10FEC227ED1F6003897AF /* RepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		39FE652D224221650077EDF1 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +224,7 @@
 		39FE6538224221650077EDF1 /* DatesCountDown */ = {
 			isa = PBXGroup;
 			children = (
+				39E10FE9227ED1A7003897AF /* Repository */,
 				395D40F62263A0A70066245E /* Resources */,
 				55A7803C345BA6A9BD5CC58C /* Modules */,
 				39FE65542247AB140077EDF1 /* Models */,
@@ -591,6 +605,7 @@
 				FC67E189CF25A44EB1C2B96B /* CreateTimerPresenter.swift in Sources */,
 				E580E73E7C91EEF6098C7A09 /* CreateTimerInteractor.swift in Sources */,
 				B1C9EDF58D440260C29CB741 /* CreateTimerRouter.swift in Sources */,
+				39E10FEB227ED1E5003897AF /* Repository.swift in Sources */,
 				2647650F0DCA9EF9175C3F1B /* CreateTimerBuilder.swift in Sources */,
 				8564D86CB80811BF4E69BDB2 /* EditTimerContract.swift in Sources */,
 				53CB68FAA939F5E51C0A39EF /* EditTimerViewController.swift in Sources */,
@@ -601,6 +616,7 @@
 				39EC0B13227B34A800F8F8E5 /* UIView.swift in Sources */,
 				39EC0B0E227AC5F200F8F8E5 /* UITableView.swift in Sources */,
 				DAFBA80C4B245ABD4910A5D4 /* EditTimerRouter.swift in Sources */,
+				39E10FED227ED1F6003897AF /* RepositoryProtocol.swift in Sources */,
 				53400286FA41427887340BD6 /* EditTimerBuilder.swift in Sources */,
 				391CA0AF227B46620079D7E2 /* BaseViewController.swift in Sources */,
 			);

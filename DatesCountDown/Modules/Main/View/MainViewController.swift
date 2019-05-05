@@ -17,9 +17,20 @@ class MainViewController: BaseViewController {
     private var disposeBag = DisposeBag()
 
     // MARK: Properties
-    var countdowns: [CountDown] = []
+    var countdowns: [CountDown] = [] {
+        didSet {
+            placeholder.isHidden = !(countdowns.count == 0)
+            tableView.isHidden = countdowns.count == 0
+        }
+    }
 
     let tableView = UITableView()
+    let placeholder = UILabel().with {
+        $0.font = .boldSystemFont(ofSize: 25)
+        $0.text = "Oops!\nNo countdowns yet :)"
+        $0.numberOfLines = 0
+        $0.textAlignment = .center
+    }
 
     init(output: MainViewOutput) {
         self.output = output
@@ -35,7 +46,6 @@ class MainViewController: BaseViewController {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
@@ -56,7 +66,8 @@ class MainViewController: BaseViewController {
 
     // MARK: Private methods
     private func addSubviews() {
-        view.addSubviews([tableView])
+        view.addSubviews([tableView,
+                          placeholder])
     }
 
     private func layout() {
@@ -65,6 +76,10 @@ class MainViewController: BaseViewController {
             .left()
             .right()
             .bottom()
+        
+        placeholder.pin
+            .center()
+            .sizeToFit()
     }
 
     private func setupViews() {

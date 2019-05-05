@@ -23,15 +23,8 @@ class MainInteractor {
         } catch {
             fatalError("Couldn't init realm")
         }
-        //startObservingChanges()
     }
 
-    private func startObservingChanges() {
-        realm.autorefresh = true
-        realm.objects(RealmCountDown.self).observe { _ in
-            self.fetchCountdowns()
-        }.invalidate()
-    }
 }
 
 extension MainInteractor: MainInteractorInput {
@@ -52,7 +45,7 @@ extension MainInteractor: MainInteractorInput {
         let countdowns = realm.objects(RealmCountDown.self)
         Observable.collection(from: countdowns)
             .map { $0.map { CountDown(with: $0) }
-                .sorted(by: { $0.id < $1.id })
+                .sorted(by: { $0.dateEnd < $1.dateEnd })
             }
             .subscribe (onNext: {
                 self.output?.fetchedConuntdowns(list: $0)
