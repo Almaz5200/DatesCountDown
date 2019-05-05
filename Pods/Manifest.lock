@@ -1,4 +1,5 @@
 PODS:
+  - Dip (7.0.1)
   - PinLayout (1.8.7)
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
@@ -16,6 +17,7 @@ PODS:
   - RxSwift (4.5.0)
 
 DEPENDENCIES:
+  - Dip
   - PinLayout (~> 1.8)
   - R.swift
   - RealmSwift
@@ -25,6 +27,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Dip
     - PinLayout
     - R.swift
     - R.swift.Library
@@ -35,6 +38,7 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
+  Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   PinLayout: a0722a5c8f0e0168a9c091ffe4930dabf0c8582c
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
@@ -44,6 +48,6 @@ SPEC CHECKSUMS:
   RxRealm: 5379eddd74f8d617ca7681d1f8d144af25b432b0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: c418822dbcdc30da753f42cccd8656746283c7bd
+PODFILE CHECKSUM: 35260921040b27cf37241dcb6ea6c612393faff9
 
 COCOAPODS: 1.6.1

@@ -11,9 +11,13 @@ import UIKit
 
 class MainBuilder {
     static func build() -> MainViewController {
+        guard let repository = try? DIContainer.instance.resolve() as RepositoryProtocol else {
+            fatalError("Check DI dependencies")
+        }
+
 		let router = MainRouter()
 
-        let interactor = MainInteractor()
+        let interactor = MainInteractor(repository: repository)
         let presenter = MainPresenter(interactor: interactor)
         let viewController = MainViewController(output: presenter)
 

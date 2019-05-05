@@ -8,6 +8,8 @@ target 'DatesCountDown' do
 
 	pod 'R.swift'
 
+  pod 'Dip'
+
   pod 'PinLayout',  '~> 1.8'
 
 	pod 'RealmSwift'

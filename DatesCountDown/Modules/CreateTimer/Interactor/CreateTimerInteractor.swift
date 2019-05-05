@@ -6,20 +6,16 @@
 //  Copyright © 2019 atrubacheev. All rights reserved.
 //
 
-import RealmSwift
+import UIKit
 
 class CreateTimerInteractor {
 
     weak var output: CreateTimerInteractorOutput?
 
-    let realm: Realm
+    let repository: RepositoryProtocol
 
-    init() {
-        do {
-            self.realm = try Realm()
-        } catch {
-            fatalError("Couldn't init realm")
-        }
+    init(repository: RepositoryProtocol) {
+        self.repository = repository
     }
 
 }
@@ -27,21 +23,7 @@ class CreateTimerInteractor {
 extension CreateTimerInteractor: CreateTimerInteractorInput {
     func createCountdownWith(name: String, date: Date) {
 
-        let countDown = RealmCountDown()
-        countDown.dateEnd = date
-        countDown.countdownTitle = name
-        countDown.id = (realm.objects(RealmCountDown.self)
-            .sorted(byKeyPath: "id")
-            .last?.id ?? -1) + 1
-
-        do {
-            try realm.write {
-                realm.add(countDown)
-            }
-        } catch {
-            fatalError(error.localizedDescription)
-        }
-
+        repository.save(date: date, name: name)
         output?.didCreatedCountdown()
     }
 }

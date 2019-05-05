@@ -6,34 +6,19 @@
 //  Copyright © 2019 atrubacheev. All rights reserved.
 //
 
-import RealmSwift
-
 class EditTimerInteractor {
     weak var output: EditTimerInteractorOutput?
 
-    let realm: Realm
+    let repository: RepositoryProtocol
 
-    init() {
-        do {
-            self.realm = try Realm()
-        } catch {
-            fatalError("Couldn't init realm")
-        }
+    init(repository: RepositoryProtocol) {
+        self.repository = repository
     }
 }
 
 extension EditTimerInteractor: EditTimerInteractorInput {
     func save(countdown: CountDown) {
-        guard var countdownToSave = realm.objects(RealmCountDown.self).first(where: { $0.id == countdown.id }) else {
-            return
-        }
-        do {
-            try realm.write {
-                countdownToSave ~> countdown
-            }
-            output?.didSaved()
-        } catch {
-            fatalError("Unable To Write")
-        }
+        repository.save(countdown: countdown)
+        output?.didSaved()
     }
 }
